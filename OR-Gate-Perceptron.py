@@ -39,7 +39,7 @@ for i in range (epochs):
             fWeight1, fWeight2 = weight1, weight2
         else:
             fWeight1, fWeight2 = finalWeights(weight1, weight2, inputs, index, learningRate)
-        print("Inputs \t Desired Output \t Initial weights \t Actual output \t Error \t Final Weights \n")
+        print("Inputs \t Desired Output \t Initial weights \t Actual output \t Error  Final Weights \n")
         print(f"{inputs[index][0]}   {inputs[index][1]}\t\t{desireOutput}\t\t {weight1}   {weight2}\t\t {actOutput}\t\t {error}\t {fWeight1}   {fWeight2}\n")
         print('-' * 100)
         weight1 = fWeight1
